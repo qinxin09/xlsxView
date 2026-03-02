@@ -1,0 +1,19 @@
+{
+  "name": "autojs-nodejs-helloworld",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node freshXlsxData.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "pinyin-pro": "^3.27.0",
+    "xlsx": "^0.18.5"
+  }
+}

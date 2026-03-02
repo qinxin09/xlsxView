@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+  <script src="js/darkreader/darkreader.js"></script>
+  <script>
+    /*
+    DEFAULT_THEME = {
+        mode: 1,
+        brightness: 100,
+        contrast: 100,
+        grayscale: 0,
+        sepia: 0,
+        useFont: false,
+        fontFamily: isMacOS
+            ? "Helvetica Neue"
+            : isWindows
+              ? "Segoe UI"
+              : "Open Sans",
+        textStroke: 0,
+        engine: ThemeEngine.dynamicTheme,
+        stylesheet: "",
+        darkSchemeBackgroundColor: DEFAULT_COLORS.darkScheme.background,
+        darkSchemeTextColor: DEFAULT_COLORS.darkScheme.text,
+        lightSchemeBackgroundColor: DEFAULT_COLORS.lightScheme.background,
+        lightSchemeTextColor: DEFAULT_COLORS.lightScheme.text,
+        scrollbarColor: "",
+        selectionColor: "auto",
+        styleSystemControls: !isCSSColorSchemePropSupported,
+        lightColorScheme: "Default",
+        darkColorScheme: "Default",
+        immediateModify: false
+    };
+    */
+    DarkReader.enable({
+      brightness: 100,
+      contrast: 90,
+      sepia: 10,
+      scheme: 'auto',
+      darkScheme: 'dark',
+      lightScheme: 'light',
+      disableSwitch: false,
+    });
+    console.log("aaaaaaaaaaaaaaaaaaaaaaaaaa");
+  </script>
+</html>
