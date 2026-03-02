@@ -143,7 +143,7 @@ npm run build
 ```
 
 ### POST /download
-下载 Excel 文件
+提供下载 Excel 文件接口
 
 **请求体：**
 ```json
@@ -265,8 +265,8 @@ A:
 
 ## 更新日志
 
-### v0.0.0
-- 初始版本
+### v0.0.1
+- 更新版本
 - 支持 Excel 文件解析和展示
 - 支持拼音搜索功能
-- 支持详情查看和分页显示
+- 优化表格，[使用虚拟表格el-table-v2以支持超大数据渲染](https://element-plus.org/zh-CN/component/table-v2)
